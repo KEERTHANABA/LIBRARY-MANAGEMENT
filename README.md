@@ -7,12 +7,16 @@ PROGRAMMING LANGUAGES USED:
 •	CSS
 •	JAVASCRIPT
 
+•	NOTE:
+INITIALLY NO BOOKS ARE ADDED IN THE LIBRARY. ADMIN MUST ADD BOOKS.
+
 WORK FLOW:
 •	The web page begins from INDEX.HTML  FILE where it displays the details and contact of the Learning center. Here the main page is completely working on the LOAD ON SCROLL MECHANISM.
 •	From this page we can either move to ADMIN OR USER PAGE.
 
 •	ADMIN:
 •	Admin can only add the books or delete the books to the library. 
+
 •	NOTE:
 INITIALLY NO BOOKS ARE ADDED IN THE LIBRARY. ADMIN MUST ADD BOOKS.
 •	By clicking admin it asks for logging in. If the admin is new to the learning center then click on the signup button. In log in page we should give our email id and password to go for further processes. In sign up page we must enter our name, mail id and password to create a new account. 
