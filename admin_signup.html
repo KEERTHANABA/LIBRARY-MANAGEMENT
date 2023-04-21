@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">LEARNING CENTER
+        </div>
+        <div class="nav-items">
+           <li><a href="index.html">Home</a></li>
+           <!-- <li><a href="#">About</a></li>
+           <li><a href="#">Books</a></li>
+           <li><a href="#">Contact</a></li> -->
+           <li><a href="admin_login.html">Log in</a></li>
+
+        </div>
+        
+    </nav>
+     <div class="content">
+     </div>
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = ()=>{
+          items.classList.add("active");
+          menuBtn.classList.add("hide");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = ()=>{
+          items.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          searchBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          form.classList.remove("active");
+          cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = ()=>{
+          form.classList.add("active");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+    </script>
+
+      
+      <div class="signupSection">
+        <div class="info">
+          <h2>LEARNING CENTER</h2>
+          <i class='fas fa-user-tie'aria-hidden="true"></i>
+          <p>The Future Is Here</p>
+        </div>
+        <form action="library.html" method="POST" class="signupForm" name="signupform">
+          <h2>Admin Sign Up</h2>
+          <ul class="noBullet">
+            <li>
+              <label for="username"></label>
+              <input type="text" class="inputFields" id="username" name="username" placeholder="Username" value="" oninput="return userNameValidation(this.value)" required/>
+            </li>
+            <li>
+              <label for="password"></label>
+              <input type="password" class="inputFields" id="password" name="password" placeholder="Password" value="" oninput="return passwordValidation(this.value)" required/>
+            </li>
+            <li>
+              <label for="email"></label>
+              <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" oninput="return emailValidation(this.value)" required/>
+            </li>
+            
+            <li id="center-btn">
+              <input type="submit" id="join-btn" name="join" alt="Join" value="Join">
+            </li>
+            
+          </ul>
+          
+                
+        </form>
+        
+      </div>
+      
+      <!-- <p style="font-size: 13px;">Already have an account?</p> -->
+      <!-- <button id="join-btn-login" name="join" alt="Join"><a href="login.html" style="color:white">Sign Up</a></button> -->
+    <script src="signup.js"></script>
+  </body>
+</html>
+      

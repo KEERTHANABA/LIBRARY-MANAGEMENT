@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARNING CENTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">LEARNING CENTER
+        </div>
+        <div class="nav-items">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <!-- <li><a href="books.html">Books</a></li> -->
+           <li><a href="#contact">Contact</a></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li><a href="admin_login.html">Admin</a></li>
+           <li><a href="login.html">User</a></li>
+
+        </div>
+        <!-- <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+           <input type="search" class="search-data" placeholder="Search" required>
+           <button type="submit" class="fas fa-search"></button>
+        </form> -->
+     </nav>
+     <div class="content">
+        <!-- <header class="space">Responsive Navbar with Search Box</header> -->
+        <!-- <div class="space text">
+           using HTML CSS & JavaScript
+        </div> -->
+     </div>
+     <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = ()=>{
+          items.classList.add("active");
+          menuBtn.classList.add("hide");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = ()=>{
+          items.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          searchBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          form.classList.remove("active");
+          cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = ()=>{
+          form.classList.add("active");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+     </script>
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">LEARNING CENTER</h2>
+        <div class="content">
+          <div class="image">
+            <img src="lib.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h3>Learning center</h3>
+            <p>To ask why we need libraries at all, when there is so much information available elsewhere, is about as sensible as asking if roadmaps are necessary now that there are so very many roads.” Eleanor Crumblehulme says “Cutting libraries during a recession is like cutting hospitals during a plague.</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+    <span id="about">
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">ABOUT</h3>
+        <div class="content">
+          <div class="image">
+            <img src="aboutimage.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title"></h4>
+            <p>We have a collection of information and similar resources, made accessible to a defined community for reference or borrowing. Learning center provides physical or digital access to material and may be a physical building or room, or a virtual space, or both. We have a collection of books, periodicals, newspapers, manuscripts, films, maps, prints, documents, microform, CDs, cassettes, videotapes, DVDs, Blu-ray Discs, e-books, audiobooks, databases, and other formats. “Libraries store the energy that fuels the imagination. They open up windows to the world and inspire us to explore and achieve, and contribute to improving our quality of life.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+</span>
+    <span id="contact">
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">CONTACT</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+          </div>
+          <div class="image">
+            <img src="contactimage.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+</span>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+  </body>
+</html>
+      

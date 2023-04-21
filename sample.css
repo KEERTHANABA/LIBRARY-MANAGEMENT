@@ -1,0 +1,50 @@
+#table {
+    margin-top: 20px;
+}
+
+#message {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 450px;
+    margin-right: 100px;
+}
+
+#messagetext {
+    text-align: center;
+}
+
+#container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#genreselection{
+    width: 500px;
+}
+
+#submitbtn{
+    width: 200px;
+    border-radius: 3.5px;
+    margin-top: 70px;
+}
+
+#btncol {
+    margin: 3px;
+    width: 10px;
+    text-align: center;
+}
+
+.btn-secondary{
+    width: 100px;
+    text-align: center;
+}
+
+.pagelink{
+    margin-left: 20px;
+    font-weight: 100px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+

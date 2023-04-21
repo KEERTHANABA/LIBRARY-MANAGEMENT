@@ -1,0 +1,70 @@
+#table {
+    margin-top: 20px;
+    
+}
+
+#message {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 450px;
+    margin-right: 100px;
+    
+}
+
+#messagetext {
+    text-align: center;
+}
+
+
+#container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#genreselection{
+    width: 500px;
+}
+
+#submitbtn{
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(20, 20, 20, .6);
+    font-size: 13px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#submitbtn:hover {
+    background: rgba(10, 180, 180, 1);
+    padding: 10px 80px;
+}
+section.total{
+    transform: translate(14%, 5%);
+    width:980px;
+    height: 480px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    
+}
+#btncol {
+    margin: 3px;
+    width: 10px;
+    text-align: center;
+}
+
+.btn-secondary{
+    width: 100px;
+    text-align: center;
+}
+
+.pagelink{
+    margin-left: 20px;
+    font-weight: 100px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
