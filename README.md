@@ -30,3 +30,5 @@ INITIALLY NO BOOKS ARE ADDED IN THE LIBRARY. ADMIN MUST ADD BOOKS.
 •	Pagination is provided in this page. If the user wants to search any book in random search bar is present to search their needs.
 •	If the user wants to SEARCH BY FILTERS like(book name/author name/publish date/genre) then must click the search by filter button where it shows the dropdown view. We can select any of the filter and search the respective book.
 
+![image](https://user-images.githubusercontent.com/81746428/233624277-5083462e-36a0-4f8a-a42d-7ffbbac4bd3f.png)
+
