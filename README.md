@@ -19,7 +19,7 @@ WORK FLOW:
 
 •	NOTE:
 INITIALLY NO BOOKS ARE ADDED IN THE LIBRARY. ADMIN MUST ADD BOOKS.
-•	By clicking admin it asks for logging in. If the admin is new to the learning center then click on the signup button. In log in page we should give our email id and password to go for further processes. In sign up page we must enter our name, mail id and password to create a new account. 
+•	By clicking admin it asks for logging in. In log in page we should give our email id and password to go for further processes.  
 •	Then the admin page redirects to library page where admin can add the books by providing the BOOK NAME,AUTHOR NAME,DATE OF PUBLISHING AND THE GENRE. 
 •	If admin is interested to view the books in the library then click on the book list button. Then it redirects to a page where all books are shown.Here I have implemented PAGINATION(10,25,50,100) any of the choices can be selected. In this page admin can either delete any particular book or can completely delete all their data. I have also added search button to search our specific book.
 
